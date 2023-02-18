@@ -6,15 +6,9 @@ const Port = process.env.PORT || 5000;
 
 
 
-
-
 app.get("/",(req, res)=>{
  res.json({"data":"home"})
  })
-
-
-
-
 
 app.use(express.json());
 
@@ -30,3 +24,4 @@ if(process.env.NODE_ENV=="production"){
 app.listen(Port, () => {
   console.log('server is running on port 5000 . . .');
 })
+
