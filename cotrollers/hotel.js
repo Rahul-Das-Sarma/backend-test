@@ -1,6 +1,6 @@
 
-
-const Hotel = require("../models/Hotel.js")
+const mongoose = require('mongoose');
+const Hotel = mongoose.model("Hotel")
 
 
 
